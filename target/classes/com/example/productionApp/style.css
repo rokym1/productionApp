@@ -1,0 +1,22 @@
+.root {
+    -fx-background-color: rgba(119, 136, 153, .4);
+
+}
+.menu-bar {
+    -fx-background-color: rgba(119, 136, 153, .4);
+}
+.menu:hover {
+    -fx-background-color: rgba(119, 136, 153, .75);
+}
+.button:hover {
+    -fx-background-color: transparent;
+}
+.choice-box:hover {
+    -fx-background-color: rgba(119, 136, 153, .75);
+}
+.choice-box .context-menu {
+    -fx-background-color: rgba(202, 221, 239);
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: rgba(119, 136, 153);
+}

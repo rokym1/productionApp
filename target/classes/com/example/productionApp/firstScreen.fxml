@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.productionApp.FirstScreenController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="750.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Category">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showCategorySearchScreen" text="Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddCategoryScreen" text="Add new Category" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Item">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showItemSearchScreen" text="Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddItemScreen" text="Add new Item" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Factory">
+            <items>
+              <MenuItem fx:id="showItemSearchScreen" mnemonicParsing="false" onAction="#showFactorySearchScreen" text="Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddFactoryScreen" text="Add new Factory" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Store">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showStoreSearchScreen" text="Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddStoreScreen" text="Add new Store" />
+              </items>
+            </Menu>
+        </menus>
+         <effect>
+            <Bloom threshold="0.95">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </Bloom>
+         </effect>
+      </MenuBar>
+   </children>
+</AnchorPane>
